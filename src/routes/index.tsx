@@ -190,7 +190,7 @@ function Index() {
             <p className="mt-5 -rotate-2 font-hand text-xl text-primary">no dress code, only good vibes ↗</p>
           </div>
           <div className="relative mx-auto w-full max-w-xl px-7 pb-10 pt-8">
-            <div className="absolute -right-2 top-0 z-20 rotate-6 rounded-full border-2 border-foreground bg-coral px-4 py-3 font-display text-xl font-bold text-primary-foreground shadow-playful">your new fav spot!</div>
+            <div className="absolute right-0 sm:-right-2 -top-2 sm:top-0 z-40 rotate-6 rounded-full border-2 border-foreground bg-coral px-4 py-3 font-display text-xl font-bold text-primary-foreground shadow-playful">your new fav spot!</div>
             <Polaroid src={hangoutPhoto} alt="Friends playing cards over coffee and sandwiches in a cozy cafe" caption="just one more game... ☕" rotate="rotate-3" priority />
             <Doodle className="steam -left-2 top-8 text-6xl text-primary">♨</Doodle>
             <Doodle className="floaty -bottom-2 right-4 text-5xl">🐾</Doodle>
@@ -207,7 +207,7 @@ function Index() {
             <div className="reveal relative mx-auto grid max-w-xl grid-cols-2 gap-5 px-3">
               <Polaroid src={dogPhoto} alt="A happy dog relaxing inside the cafe" caption="pups = VIPs" rotate="-rotate-3" className="mt-12" />
               <Polaroid src={gamesPhoto} alt="Friends enjoying a board game with a match on TV" caption="weekend plans sorted" rotate="rotate-3" />
-              <span className="absolute left-[42%] top-[42%] z-30 rotate-6 rounded-full border-2 border-foreground bg-butter px-4 py-3 font-display text-xl font-bold shadow-playful">certified cozy ✓</span>
+              <span className="absolute left-[42%] top-[42%] z-40 rotate-6 rounded-full border-2 border-foreground bg-butter px-4 py-3 font-display text-xl font-bold shadow-playful">certified cozy ✓</span>
             </div>
             <div className="reveal">
               <p className="font-hand text-2xl text-primary">a little note from us ♡</p>
@@ -242,7 +242,7 @@ function Index() {
             <h2 className="text-7xl font-bold sm:text-8xl">the good stuff</h2>
           </div>
           <div className="reveal relative mt-12 rotate-[.5deg] border-[3px] border-foreground bg-foreground p-6 text-background shadow-[8px_9px_0_var(--rose)] sm:p-10">
-            <span className="absolute -left-4 -top-5 -rotate-6 bg-butter px-5 py-2 font-hand text-xl text-foreground">tiny menu, big feelings</span>
+            <span className="absolute left-0 sm:-left-4 -top-5 z-40 -rotate-6 bg-butter px-5 py-2 font-hand text-xl text-foreground">tiny menu, big feelings</span>
             <div className="grid gap-12 md:grid-cols-2 md:gap-14">
               {menu.map((category) => (
                 <div key={category.title}>
@@ -286,7 +286,7 @@ function Index() {
           <div className="reveal text-center"><p className="font-hand text-2xl text-primary">you coming or what?</p><h2 className="text-7xl font-bold sm:text-8xl">find your way here</h2></div>
           <div className="mt-12 grid gap-8 lg:grid-cols-[.9fr_1.1fr]">
             <div className="reveal relative doodle-border rotate-[-1deg] bg-coral p-7 text-primary-foreground sm:p-9">
-              <div className="absolute -right-5 -top-5 flex size-20 rotate-6 items-center justify-center rounded-full border-2 border-foreground bg-butter text-foreground shadow-playful"><MapPin className="size-10" /></div>
+              <div className="absolute right-0 sm:-right-5 -top-5 z-40 flex size-20 rotate-6 items-center justify-center rounded-full border-2 border-foreground bg-butter text-foreground shadow-playful"><MapPin className="size-10" /></div>
               <h3 className="text-5xl font-bold">Boho Cafe</h3>
               <div className="mt-7 space-y-5 text-lg font-bold">
                 <p className="flex gap-3"><MapPin className="mt-1 shrink-0" /> Dam Road, Tathawade,<br />Pimpri-Chinchwad, Pune</p>
