@@ -207,7 +207,7 @@ function Index() {
             <div className="reveal relative mx-auto grid max-w-xl grid-cols-2 gap-5 px-3">
               <Polaroid src={dogPhoto} alt="A happy dog relaxing inside the cafe" caption="pups = VIPs" rotate="-rotate-3" className="mt-12" />
               <Polaroid src={gamesPhoto} alt="Friends enjoying a board game with a match on TV" caption="weekend plans sorted" rotate="rotate-3" />
-              <span className="absolute left-[42%] top-[42%] z-40 rotate-6 rounded-full border-2 border-foreground bg-butter px-4 py-3 font-display text-xl font-bold shadow-playful">certified cozy ✓</span>
+              <span className="absolute left-[50%] top-[0%] -translate-x-1/2 sm:left-[42%] sm:top-[42%] sm:translate-x-0 z-40 rotate-6 whitespace-nowrap rounded-full border-2 border-foreground bg-butter px-4 py-3 font-display text-lg sm:text-xl font-bold shadow-playful">certified cozy ✓</span>
             </div>
             <div className="reveal">
               <p className="font-hand text-2xl text-primary">a little note from us ♡</p>
