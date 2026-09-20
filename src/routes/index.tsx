@@ -302,7 +302,7 @@ function Index() {
                 <p className="mt-7 max-w-md font-display text-4xl font-bold">somewhere between “one coffee” and “okay, last game”</p>
                 <div className="mt-7 flex flex-wrap justify-center gap-4">
                   <WhatsAppButton label="Message us" />
-                  <Button asChild variant="cream" size="chunky"><a href="https://www.google.com/maps/search/?api=1&query=Boho+Cafe+Dam+Road+Tathawade+Pune" target="_blank" rel="noreferrer">Get directions <ArrowUpRight /></a></Button>
+                  <Button asChild variant="cream" size="chunky"><a href="https://maps.app.goo.gl/1uP9tQb2QUZ8Pj6e8" target="_blank" rel="noreferrer">Get directions <ArrowUpRight /></a></Button>
                 </div>
               </div>
             </div>
