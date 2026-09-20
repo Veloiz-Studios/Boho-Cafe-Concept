@@ -1,0 +1,7 @@
+﻿
+> build
+> vite build
+
+[36mvite v8.1.5 [32mbuilding client environment for production...[36m[39m
+[2K
+transforming...Γ£ô 1 modules transformed.
