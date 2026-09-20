@@ -17,6 +17,8 @@ import {
   Star,
   Tv,
   X,
+  Facebook,
+  Twitter,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -105,7 +107,7 @@ function WhatsAppButton({ label, className = "" }: { label: string; className?: 
         onClick={() => {
           setBurst(true);
           window.setTimeout(() => setBurst(false), 800);
-          document.querySelector("#contact-note")?.scrollIntoView({ behavior: "smooth", block: "center" });
+          window.open("https://wa.me/919876543210?text=Hi, I would like to know more about Boho Cafe!", "_blank");
         }}
       >
         <MessageCircle /> {label} <PawPrint />
@@ -313,7 +315,11 @@ function Index() {
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-7 text-center sm:flex-row sm:text-left">
           <div><p className="font-display text-4xl font-bold text-accent">see you soon, pookie ☕🐾</p><p className="mt-1 font-semibold">Come hungry. Stay unreasonably long.</p></div>
           <a href="#top" className="wiggle-hover flex items-center gap-2 font-bold">back to the top <Sparkles /></a>
-          <div className="flex items-center gap-3"><Instagram /><Star className="text-accent" /><Heart className="text-rose" /></div>
+          <div className="flex items-center gap-4">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="transition-transform hover:scale-110 hover:text-rose"><Instagram /></a>
+            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="transition-transform hover:scale-110 hover:text-accent"><Facebook /></a>
+            <a href="https://twitter.com" target="_blank" rel="noreferrer" className="transition-transform hover:scale-110 hover:text-primary"><Twitter /></a>
+          </div>
         </div>
         <p className="mx-auto mt-8 max-w-7xl border-t border-background/30 pt-5 text-center text-xs font-semibold text-background/75">Concept design by <a href="https://veloizstudios.in" target="_blank" rel="noreferrer" className="underline hover:text-accent">Veloiz Studios</a> — an unaffiliated portfolio piece, not the cafe’s actual website.</p>
       </footer>
