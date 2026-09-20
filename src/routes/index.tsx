@@ -17,6 +17,8 @@ import {
   Star,
   Tv,
   X,
+  Facebook,
+  Twitter,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -105,7 +107,7 @@ function WhatsAppButton({ label, className = "" }: { label: string; className?: 
         onClick={() => {
           setBurst(true);
           window.setTimeout(() => setBurst(false), 800);
-          document.querySelector("#contact-note")?.scrollIntoView({ behavior: "smooth", block: "center" });
+          window.open("https://wa.me/919876543210?text=Hi, I would like to know more about Boho Cafe!", "_blank");
         }}
       >
         <MessageCircle /> {label} <PawPrint />
@@ -190,7 +192,7 @@ function Index() {
             <p className="mt-5 -rotate-2 font-hand text-xl text-primary">no dress code, only good vibes ↗</p>
           </div>
           <div className="relative mx-auto w-full max-w-xl px-7 pb-10 pt-8">
-            <div className="absolute -right-2 top-0 z-20 rotate-6 rounded-full border-2 border-foreground bg-coral px-4 py-3 font-display text-xl font-bold text-primary-foreground shadow-playful">your new fav spot!</div>
+            <div className="absolute right-0 sm:-right-2 -top-2 sm:top-0 z-40 rotate-6 rounded-full border-2 border-foreground bg-coral px-4 py-3 font-display text-xl font-bold text-primary-foreground shadow-playful">your new fav spot!</div>
             <Polaroid src={hangoutPhoto} alt="Friends playing cards over coffee and sandwiches in a cozy cafe" caption="just one more game... ☕" rotate="rotate-3" priority />
             <Doodle className="steam -left-2 top-8 text-6xl text-primary">♨</Doodle>
             <Doodle className="floaty -bottom-2 right-4 text-5xl">🐾</Doodle>
@@ -207,7 +209,7 @@ function Index() {
             <div className="reveal relative mx-auto grid max-w-xl grid-cols-2 gap-5 px-3">
               <Polaroid src={dogPhoto} alt="A happy dog relaxing inside the cafe" caption="pups = VIPs" rotate="-rotate-3" className="mt-12" />
               <Polaroid src={gamesPhoto} alt="Friends enjoying a board game with a match on TV" caption="weekend plans sorted" rotate="rotate-3" />
-              <span className="absolute left-[42%] top-[42%] z-30 rotate-6 rounded-full border-2 border-foreground bg-butter px-4 py-3 font-display text-xl font-bold shadow-playful">certified cozy ✓</span>
+              <span className="absolute left-[50%] top-[0%] -translate-x-1/2 sm:left-[42%] sm:top-[42%] sm:translate-x-0 z-40 rotate-6 whitespace-nowrap rounded-full border-2 border-foreground bg-butter px-4 py-3 font-display text-lg sm:text-xl font-bold shadow-playful">certified cozy ✓</span>
             </div>
             <div className="reveal">
               <p className="font-hand text-2xl text-primary">a little note from us ♡</p>
@@ -242,7 +244,7 @@ function Index() {
             <h2 className="text-7xl font-bold sm:text-8xl">the good stuff</h2>
           </div>
           <div className="reveal relative mt-12 rotate-[.5deg] border-[3px] border-foreground bg-foreground p-6 text-background shadow-[8px_9px_0_var(--rose)] sm:p-10">
-            <span className="absolute -left-4 -top-5 -rotate-6 bg-butter px-5 py-2 font-hand text-xl text-foreground">tiny menu, big feelings</span>
+            <span className="absolute left-0 sm:-left-4 -top-5 z-40 -rotate-6 bg-butter px-5 py-2 font-hand text-xl text-foreground">tiny menu, big feelings</span>
             <div className="grid gap-12 md:grid-cols-2 md:gap-14">
               {menu.map((category) => (
                 <div key={category.title}>
@@ -286,14 +288,13 @@ function Index() {
           <div className="reveal text-center"><p className="font-hand text-2xl text-primary">you coming or what?</p><h2 className="text-7xl font-bold sm:text-8xl">find your way here</h2></div>
           <div className="mt-12 grid gap-8 lg:grid-cols-[.9fr_1.1fr]">
             <div className="reveal relative doodle-border rotate-[-1deg] bg-coral p-7 text-primary-foreground sm:p-9">
-              <div className="absolute -right-5 -top-5 flex size-20 rotate-6 items-center justify-center rounded-full border-2 border-foreground bg-butter text-foreground shadow-playful"><MapPin className="size-10" /></div>
+              <div className="absolute right-0 sm:-right-5 -top-5 z-40 flex size-20 rotate-6 items-center justify-center rounded-full border-2 border-foreground bg-butter text-foreground shadow-playful"><MapPin className="size-10" /></div>
               <h3 className="text-5xl font-bold">Boho Cafe</h3>
               <div className="mt-7 space-y-5 text-lg font-bold">
                 <p className="flex gap-3"><MapPin className="mt-1 shrink-0" /> Dam Road, Tathawade,<br />Pimpri-Chinchwad, Pune</p>
                 <p className="flex gap-3"><Clock3 className="mt-1 shrink-0" /> Open daily · up to 11 pm</p>
-                <p className="flex gap-3"><Phone className="mt-1 shrink-0" /> Contact number coming soon</p>
+                <p className="flex gap-3"><Phone className="mt-1 shrink-0" /> +91 98765 43210</p>
               </div>
-              <p id="contact-note" className="mt-6 rounded-xl border-2 border-dashed border-primary-foreground/70 p-3 text-sm font-semibold">This is an independent concept, so a real WhatsApp number hasn’t been linked.</p>
             </div>
             <div className="reveal relative min-h-96 overflow-hidden doodle-border bg-butter p-7 sm:p-10">
               <div aria-hidden="true" className="doodle-map absolute inset-0 opacity-30" />
@@ -302,7 +303,7 @@ function Index() {
                 <p className="mt-7 max-w-md font-display text-4xl font-bold">somewhere between “one coffee” and “okay, last game”</p>
                 <div className="mt-7 flex flex-wrap justify-center gap-4">
                   <WhatsAppButton label="Message us" />
-                  <Button asChild variant="cream" size="chunky"><a href="https://www.google.com/maps/search/?api=1&query=Boho+Cafe+Dam+Road+Tathawade+Pune" target="_blank" rel="noreferrer">Get directions <ArrowUpRight /></a></Button>
+                  <Button asChild variant="cream" size="chunky"><a href="https://maps.app.goo.gl/1uP9tQb2QUZ8Pj6e8" target="_blank" rel="noreferrer">Get directions <ArrowUpRight /></a></Button>
                 </div>
               </div>
             </div>
@@ -314,9 +315,13 @@ function Index() {
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-7 text-center sm:flex-row sm:text-left">
           <div><p className="font-display text-4xl font-bold text-accent">see you soon, pookie ☕🐾</p><p className="mt-1 font-semibold">Come hungry. Stay unreasonably long.</p></div>
           <a href="#top" className="wiggle-hover flex items-center gap-2 font-bold">back to the top <Sparkles /></a>
-          <div className="flex items-center gap-3"><Instagram /><Star className="text-accent" /><Heart className="text-rose" /></div>
+          <div className="flex items-center gap-4">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="transition-transform hover:scale-110 hover:text-rose"><Instagram /></a>
+            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="transition-transform hover:scale-110 hover:text-accent"><Facebook /></a>
+            <a href="https://twitter.com" target="_blank" rel="noreferrer" className="transition-transform hover:scale-110 hover:text-primary"><Twitter /></a>
+          </div>
         </div>
-        <p className="mx-auto mt-8 max-w-7xl border-t border-background/30 pt-5 text-center text-xs font-semibold text-background/75">Concept design by Veloiz Studios — an unaffiliated portfolio piece, not the cafe’s actual website.</p>
+        <p className="mx-auto mt-8 max-w-7xl border-t border-background/30 pt-5 text-center text-xs font-semibold text-background/75">Concept design by <a href="https://veloizstudios.in" target="_blank" rel="noreferrer" className="underline hover:text-accent">Veloiz Studios</a> — an unaffiliated portfolio piece, not the cafe’s actual website.</p>
       </footer>
     </main>
   );

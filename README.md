@@ -1,29 +1,29 @@
-# Welcome to your Lovable project
+# Boho Cafe Concept
 
-This project was built with [Lovable](https://lovable.dev).
+A modern, responsive single-page web experience showcasing the Boho Cafe located in Tathawade, Pune.
 
-## Build with Lovable
+## Features
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Cozy Design**: Warm and inviting aesthetic reflecting the cafe's atmosphere.
+- **Tech Stack**: Built with React, TypeScript, TanStack Router, and Tailwind CSS.
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Make sure you have Node.js and npm installed.
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
+
+# Build for production
+npm run build
 ```
 
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
+## Built With
+- React 19
+- Vite
+- TanStack Router
 - Tailwind CSS
