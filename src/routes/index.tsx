@@ -213,7 +213,7 @@ function Index() {
             </div>
             <div className="reveal">
               <p className="font-hand text-2xl text-primary">a little note from us ♡</p>
-              <h2 className="mt-2 max-w-2xl text-6xl font-bold leading-[.85] sm:text-7xl">We made a place we’d never want to leave.</h2>
+              <h2 className="mt-2 max-w-2xl text-6xl font-bold leading-[.85] sm:text-7xl">We've made a place we’d never want to leave.</h2>
               <p className="mt-7 max-w-xl text-lg font-semibold leading-relaxed">Boho is your neighbourhood living room — except we make the cold coffee and clean up the cards. Come with family, bring the whole group chat, or claim a sunny corner with your furry sidekick.</p>
               <p className="mt-4 max-w-xl text-lg leading-relaxed">Stay for the snacks. Linger for the match on our little corner TV. Nobody’s rushing you out.</p>
             </div>
