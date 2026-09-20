@@ -291,9 +291,8 @@ function Index() {
               <div className="mt-7 space-y-5 text-lg font-bold">
                 <p className="flex gap-3"><MapPin className="mt-1 shrink-0" /> Dam Road, Tathawade,<br />Pimpri-Chinchwad, Pune</p>
                 <p className="flex gap-3"><Clock3 className="mt-1 shrink-0" /> Open daily · up to 11 pm</p>
-                <p className="flex gap-3"><Phone className="mt-1 shrink-0" /> Contact number coming soon</p>
+                <p className="flex gap-3"><Phone className="mt-1 shrink-0" /> +91 98765 43210</p>
               </div>
-              <p id="contact-note" className="mt-6 rounded-xl border-2 border-dashed border-primary-foreground/70 p-3 text-sm font-semibold">This is an independent concept, so a real WhatsApp number hasn’t been linked.</p>
             </div>
             <div className="reveal relative min-h-96 overflow-hidden doodle-border bg-butter p-7 sm:p-10">
               <div aria-hidden="true" className="doodle-map absolute inset-0 opacity-30" />
@@ -316,7 +315,7 @@ function Index() {
           <a href="#top" className="wiggle-hover flex items-center gap-2 font-bold">back to the top <Sparkles /></a>
           <div className="flex items-center gap-3"><Instagram /><Star className="text-accent" /><Heart className="text-rose" /></div>
         </div>
-        <p className="mx-auto mt-8 max-w-7xl border-t border-background/30 pt-5 text-center text-xs font-semibold text-background/75">Concept design by Veloiz Studios — an unaffiliated portfolio piece, not the cafe’s actual website.</p>
+        <p className="mx-auto mt-8 max-w-7xl border-t border-background/30 pt-5 text-center text-xs font-semibold text-background/75">Concept design by <a href="https://veloizstudios.in" target="_blank" rel="noreferrer" className="underline hover:text-accent">Veloiz Studios</a> — an unaffiliated portfolio piece, not the cafe’s actual website.</p>
       </footer>
     </main>
   );
